@@ -7,11 +7,24 @@ def line(array)
   puts "The line is currently empty." 
   else 
       array.each.with_index(1) {|name, i|
-    line_string += " #{i}. #{name}"  
+    line_string << " #{i}. #{name}"
   } 
   puts line_string 
   end
 end  
+
+# def line(array)
+#   line_string = "The line is currently:"
+  
+#   if array.length == 0  
+#   puts "The line is currently empty." 
+#   else 
+#       array.each.with_index(1) {|name, i|
+#     line_string += " #{i}. #{name}"  
+#   } 
+#   puts line_string 
+#   end
+# end  
 
 def take_a_number(katz_deli,name)
   katz_deli << name
